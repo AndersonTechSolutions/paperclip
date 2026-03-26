@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { Paperclip, Plus } from "lucide-react";
 import { useQueries } from "@tanstack/react-query";
 import {
@@ -123,6 +122,7 @@ function SortableCompanyItem({
             >
               <CompanyPatternIcon
                 companyName={company.name}
+                logoUrl={company.logoUrl}
                 brandColor={company.brandColor}
                 className={cn(
                   isSelected
