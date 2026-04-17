@@ -1,4 +1,5 @@
 export { companyService } from "./companies.js";
+export { feedbackService } from "./feedback.js";
 export { companySkillService } from "./company-skills.js";
 export { agentService, deduplicateAgentName } from "./agents.js";
 export { agentInstructionsService, syncInstructionsBundleConfigFromFilePath } from "./agent-instructions.js";
@@ -18,6 +19,8 @@ export { financeService } from "./finance.js";
 export { heartbeatService } from "./heartbeat.js";
 export { dashboardService } from "./dashboard.js";
 export { sidebarBadgeService } from "./sidebar-badges.js";
+export { sidebarPreferenceService } from "./sidebar-preferences.js";
+export { inboxDismissalService } from "./inbox-dismissals.js";
 export { accessService } from "./access.js";
 export { boardAuthService } from "./board-auth.js";
 export { instanceSettingsService } from "./instance-settings.js";
@@ -30,5 +33,5 @@ export { notifyHireApproved, type NotifyHireApprovedInput } from "./hire-hook.js
 export { publishLiveEvent, subscribeCompanyLiveEvents, subscribeGlobalLiveEvents } from "./live-events.js";
 export { pushNotificationService } from "./push-notifications.js";
 export { startPushDispatcher } from "./push-dispatcher.js";
-export { reconcilePersistedRuntimeServicesOnStartup } from "./workspace-runtime.js";
+export { reconcilePersistedRuntimeServicesOnStartup, restartDesiredRuntimeServicesOnStartup } from "./workspace-runtime.js";
 export { createStorageServiceFromConfig, getStorageService } from "../storage/index.js";
