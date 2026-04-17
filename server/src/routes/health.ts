@@ -112,6 +112,9 @@ export function healthRoutes(
         deploymentMode: opts.deploymentMode,
         bootstrapStatus,
         bootstrapInviteActive,
+        features: {
+          googleAuthEnabled: !!opts.googleAuthEnabled,
+        },
       });
       return;
     }
