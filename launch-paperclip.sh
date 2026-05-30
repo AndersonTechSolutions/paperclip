@@ -6,6 +6,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export HOME="/srv/nanobot/paperclip"
 export NODE_ENV="production"
 export PAPERCLIP_MIGRATION_PROMPT="never"
+export PAPERCLIP_MIGRATION_AUTO_APPLY="true"
 export BETTER_AUTH_TRUSTED_ORIGINS="https://paperclip.andersontechsolutions.com,http://localhost:3100"
 
 cd /srv/nanobot/paperclip/source/server
